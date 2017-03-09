@@ -1,0 +1,15 @@
+import app
+#from app import db
+
+class Base():
+    _db
+    def __init__(self,db):
+        self.db = db
+        self._table = ''
+    
+    def find(self):
+        pass
+
+    def save(self):
+        try:
+            

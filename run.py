@@ -3,6 +3,8 @@
 #
 #
 #
+import app
+
 def main():
     print('Hi')
 
