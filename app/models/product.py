@@ -1,11 +1,8 @@
-from app import Base
+from . base import Base
+from . link import Link
 
 class Product(Base):
     _table = 'product'
-    name = None
-    desc = None
-    barcode = None
-    
-    
-    def test(self):
-        pass
+        
+    def getLinks(self):
+        return Link.get()

@@ -6,10 +6,13 @@
 import app
 
 def main():
-    print('Hi')
-    a = app.Product( )
-    a.name = 'product 1'
-    a.save()
+    print('Creating products:',end=" "),
+    for x in range(10):
+        a = app.Product( )
+        a['name'] = 'product '+ str(x)
+        a.save()
+        print('.',end="")
+    print(" Done")
 
 if __name__ == '__main__':
     main()
